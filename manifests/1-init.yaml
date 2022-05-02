@@ -1,0 +1,17 @@
+actions:
+## SSH Keys
+  - action: command.run
+    command: ssh-keygen 
+    args:
+      - -t ed25519
+      - -f /home/levi/.ssh/git
+  - action: command.run
+    command: ssh-keygen 
+    args:
+      - -t ed25519
+      - -f /home/levi/.ssh/id
+  ## System Upgrade
+  - action: command.run
+    command: yay
+    args:
+      - -Syyu

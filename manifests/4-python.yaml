@@ -1,0 +1,24 @@
+depends:
+- 2-packages
+actions:
+  - action: command.run
+    command: pyenv
+    args:
+      - install
+      - {{ variables.pythonVersion }}
+  - action: command.run
+    command: pyenv
+    args:
+      - global
+      - {{ variables.pythonVersion }}
+  - action: command.run
+    command: pip
+    args:
+      - install
+      - --upgrade
+      - pip
+  - action: command.run
+    command: pip
+    args:
+      - install
+      - pylint

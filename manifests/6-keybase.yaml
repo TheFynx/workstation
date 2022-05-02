@@ -1,0 +1,18 @@
+depends:
+  - 1-init
+  - 2-packages
+  - 3-services
+  - 4-node
+  - 4-python
+  - 4-ruby
+  - 5-terminal
+actions:
+  - action: file.copy
+    from: bluetooth_main.conf
+    to: "/tmp/bluetooth_main.conf"
+  - action: command.run
+    sudo: true
+    command: mv
+    args:
+      - /tmp/bluetooth_main.conf
+      - /etc/bluetooth/main.conf

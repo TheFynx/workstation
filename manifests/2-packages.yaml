@@ -1,0 +1,174 @@
+depends:
+  - 1-init
+actions:
+  # Themes
+  - action: package.install
+    provider: yay
+    list:
+      - materia-gtk-theme
+      - paper-icon-theme-git
+      - nordic-darker-theme
+      - adwaita-icon-theme
+      - gnome-themes-extra
+      - midnight-gtk-theme-git
+  # System
+  - action: package.install
+    provider: yay
+    list:
+      - jq
+      - tree
+      - curl
+      - curlie
+      - wget
+      - unzip
+      - dkms
+      - zip
+      - unrar
+      - gzip
+      - git
+      - xclip
+      - rsync
+      - fd
+      - exa
+      - pandoc
+      - bzip2
+      - shfmt
+      - p7zip
+      - gparted
+      - jre11-openjdk
+      - diffutils
+      - clamtk
+      - docker
+      - bluez
+      - bluez-utils
+      - blueberry
+      - dell-e514dw
+      - stacer-bin
+      - gtop
+      - topgrade
+  # Desktop Environment
+  - action: package.install
+    provider: yay
+    list:
+      - pavucontrol
+      - libreoffice-fresh
+      - flameshot
+      - keybase-gui
+      - bitwarden
+      - psensor
+      - vlc
+      - etcher-bin
+      - brave-bin
+      - corectrl
+      - rgb_keyboard-git
+  # DevTools
+  - action: package.install
+    provider: yay
+    list:
+      - insomnia
+      - neovim
+      - visual-studio-code-bin
+  # Terminal
+  - action: package.install
+    provider: yay
+    list:
+      - lynx
+      - alacritty
+      - wezterm
+      - hstr
+      - gitstatus-bin
+      - zsh
+      - zsh-autosuggestions
+      - zsh-theme-powerlevel10k
+      - powerline
+      - zsh-history-substring-search
+      - zsh-syntax-highlighting
+      - antigen
+  # Fonts
+  - action: package.install
+    provider: yay
+    list:
+      - powerline-fonts
+      - ttf-hack
+      - ttf-droid
+      - adobe-source-code-pro-fonts
+      - ttf-ancient-fonts
+      - nerd-fonts-source-code-pro
+      - ttf-ms-fonts
+      - ttf-weather-icons
+      - ttf-material-design-icons
+      - ttf-all-the-icons
+  # Coding
+  - action: package.install
+    provider: yay
+    list:
+      - pyenv
+      - ruby
+      - python
+      - python-pip
+      - go
+      - pyenv
+      - ts-node
+      - yarn
+      - rbenv-git
+      - ruby-build
+      - nodenv
+      - nodenv-node-build
+  # VM
+  - action: package.install
+    provider: yay
+    list:
+      - vagrant
+      - virtio-win
+      - bridge-utils
+      - virt-manager
+      - dnsmasq
+      - qemu
+      - libvirt
+      - edk2-ovmf
+  # Work Related
+  - action: package.install
+    provider: yay
+    list:
+      - aws-cli-v2-bin
+      - pulumi
+      - terraform
+      - packer
+  # Gaming
+  - action: package.install
+    provider: yay
+    list:
+      - lib32-gnutls
+      - lib32-libldap
+      - lib32-libgpg-error
+      - lib32-sqlite
+      - lib32-libpulse
+      - lib32-libxml2
+      - lib32-alsa-plugins
+      - lib32-sdl2
+      - lib32-freetype2
+      - lib32-dbus
+      - lib32-libgcrypt
+      - libgcrypt
+      - xpadneo-dkms-git
+      - mono
+      - wine-mono
+      - eog
+      - vulkan-icd-loader
+      - lib32-vulkan-icd-loader
+      - lutris
+      - scanmem
+      - gameconqueror
+      - steam
+      - heroic-games-launcher-bin
+      - pywinery
+      - protontricks-git
+  # Radeon
+  - action: package.install
+    provider: yay
+    list:
+      - lib32-mesa
+      - libva-mesa-driver
+      - lib32-libva-mesa-driver
+      - mesa-vdpau
+      - lib32-mesa-vdpau

@@ -1,0 +1,22 @@
+import:
+  - ~/.config/alacritty/colors.yml
+  - ~/.config/alacritty/fonts.yml
+## Set Environment Variables
+env:
+  TERM: alacritty
+  WINIT_X11_SCALE_FACTOR: '1.0'
+window:
+  padding:
+   x: 5
+   y: 5
+  decorations: none
+  startup_mode: Windowed
+  opacity: 0.85
+scrolling:
+  history: 100000
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  save_to_clipboard: true
+cursor:
+  style: Beam
+live_config_reload: true

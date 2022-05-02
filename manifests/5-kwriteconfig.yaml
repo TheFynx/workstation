@@ -1,0 +1,7 @@
+depends:
+- 2-packages
+actions:
+  - action: command.run
+    command: sh
+    args:
+      - echo "I'd run something"

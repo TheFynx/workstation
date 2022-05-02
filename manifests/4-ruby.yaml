@@ -1,0 +1,13 @@
+depends:
+- 2-packages
+actions:
+  - action: command.run
+    command: rbenv
+    args:
+      - install
+      - {{ variables.rubyVersion }}
+  - action: command.run
+    command: rbenv
+    args:
+      - global
+      - {{ variables.rubyVersion }}

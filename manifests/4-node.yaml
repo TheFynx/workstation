@@ -1,0 +1,13 @@
+depends:
+- 2-packages
+actions:
+  - action: command.run
+    command: nodenv
+    args:
+      - install
+      - {{ variables.nodeVersion }}
+  - action: command.run
+    command: nodenv
+    args:
+      - global
+      - {{ variables.nodeVersion }}

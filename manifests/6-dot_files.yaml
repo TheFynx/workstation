@@ -1,0 +1,23 @@
+depends:
+  - 1-init
+  - 2-packages
+  - 3-services
+  - 4-node
+  - 4-python
+  - 4-ruby
+actions:
+  - action: file.copy
+    from: aliases.sh
+    to: "{{ user.home_dir }}/.aliases"
+  - action: file.copy
+    from: zshrc
+    to: "{{ user.home_dir }}/.zshrc"
+  - action: file.copy
+    from: exports.sh
+    to: "{{ user.home_dir }}/.exports"
+  - action: file.copy
+    from: functions.sh
+    to: "{{ user.home_dir }}/.functions"
+  - action: file.copy
+    from: path.sh
+    to: "{{ user.home_dir }}/.path"

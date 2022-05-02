@@ -1,0 +1,30 @@
+depends:
+  - 1-init
+  - 2-packages
+  - 3-services
+  - 4-node
+  - 4-python
+  - 4-ruby
+  - 5-terminal
+actions:
+  - action: file.copy
+    from: neo.sh
+    template: true
+    to: "{{ user.home_dir }}/.config/nvim/init.vim"
+    chmod: 755
+  - action: file.copy
+    from: neo/init.vim
+    to: "{{ user.home_dir }}/.config/nvim/modules/init.vim"
+    chmod: 755
+  - action: file.copy
+    from: neo/general.vim
+    to: "{{ user.home_dir }}/.config/nvim/modules/general.vim"
+    chmod: 755
+  - action: file.copy
+    from: neo/bindings.vim
+    to: "{{ user.home_dir }}/.config/nvim/modules/bindings.vim"
+    chmod: 755
+  - action: file.copy
+    from: neo/plugins.vim
+    to: "{{ user.home_dir }}/.config/nvim/modules/plugins.vim"
+    chmod: 755

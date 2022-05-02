@@ -1,0 +1,15 @@
+# Manifest Location
+# Default: [.]
+# This is a list because we'll eventually support multiple.
+# However, only the first is used atm.
+manifests:
+  - manifests/
+
+# Used by the variables context provider:
+# context="variables" key="<key>" value="<value>"
+variables:
+  pythonVersion: "3.10.3"
+  rubyVersion: "3.1.2"
+  nodeVersion: "16.14.2"
+  userFullName: "Levi Smith"
+  userEmail: "levi@fynx.me"
