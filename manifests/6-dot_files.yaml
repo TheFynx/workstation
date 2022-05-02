@@ -21,3 +21,6 @@ actions:
   - action: file.copy
     from: path.sh
     to: "{{ user.home_dir }}/.path"
+  - action: file.copy
+    from: p10k.zsh
+    to: "{{ user.home_dir }}/.p10k.zsh"
