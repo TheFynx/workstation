@@ -1,7 +1,116 @@
 depends:
-- 2-packages
+  - 2-packages
 actions:
   - action: command.run
-    command: sh
+    command: kwriteconfig5
     args:
-      - echo "I'd run something"
+      - "--group"
+      - Icons
+      - "--key"
+      - Theme
+      - "candy-icons"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - General
+      - "--key"
+      - ColorScheme
+      - "Sweet"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - Mouse
+      - "--key"
+      - cursorTheme
+      - "Breeze"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - Icons
+      - "--key"
+      - Theme
+      - "Sweet-cursors"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - Greeter
+      - "--key"
+      - Theme
+      - "Sweet"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - KSplash
+      - "--key"
+      - Engine
+      - "KSplashQML"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - KSplash
+      - "--key"
+      - Theme
+      - "Sweet"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - TabBox
+      - "--key"
+      - DesktopLayout
+      - "org.kde.breeze.desktop"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - TabBox
+      - "--key"
+      - DesktopListLayout
+      - "org.kde.breeze.desktop"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - TabBox
+      - "--key"
+      - LayoutName
+      - "org.kde.breeze.desktop"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - Windows
+      - "--key"
+      - Placement
+      - "Centered"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - "org.kde.kdecoration2"
+      - "--key"
+      - theme
+      - "__aurorae__svg__Sweet-Dark"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - "org.kde.kdecoration2"
+      - "--key"
+      - library
+      - "org.kde.kwin.aurorae"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - Theme
+      - "--key"
+      - name
+      - "Sweet"
+      #kwriteconfig5 --group Icons --key Theme breeze
