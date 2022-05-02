@@ -5,10 +5,50 @@ actions:
     command: kwriteconfig5
     args:
       - "--group"
+      - General
+      - "--key"
+      - BrowserApplication
+      - "brave-browser.desktop"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - General
+      - "--key"
+      - TerminalApplication
+      - "alacritty"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - General
+      - "--key"
+      - TerminalService
+      - "Alacritty.desktop"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
       - Icons
       - "--key"
       - Theme
       - "candy-icons"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - KDE
+      - "--key"
+      - LookAndFeelPackage
+      - "Sweet"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - KDE
+      - "--key"
+      - SingleClick
+      - "false"
   - action: command.run
     command: kwriteconfig5
     args:
@@ -25,14 +65,6 @@ actions:
       - "--key"
       - cursorTheme
       - "Breeze"
-  - action: command.run
-    command: kwriteconfig5
-    args:
-      - "--group"
-      - Icons
-      - "--key"
-      - Theme
-      - "Sweet-cursors"
   - action: command.run
     command: kwriteconfig5
     args:
@@ -113,4 +145,99 @@ actions:
       - "--key"
       - name
       - "Sweet"
-      #kwriteconfig5 --group Icons --key Theme breeze
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - "Alacritty.desktop"
+      - "--key"
+      - New
+      - "Meta+T,none,New Terminal"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - "Alacritty.desktop"
+      - "--key"
+      - _k_friendly_name
+      - "Alacritty"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - "Alacritty.desktop"
+      - "--key"
+      - _launch
+      - "none,none,Alacritty"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - "kwin"
+      - "--key"
+      - "Window to Next Screen"
+      - "Meta+Shift+Right,Meta+Shift+Right,Window to Next Screen"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - "kwin"
+      - "--key"
+      - "ShowDesktopGrid"
+      - "Ctrl+Alt+Down\tCtrl+F8,Ctrl+F8,Show Desktop Grid"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - "kwin"
+      - "--key"
+      - "Switch to Next Desktop"
+      - "Ctrl+Alt+Right,,Switch to Next Desktop"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - "kwin"
+      - "--key"
+      - "Switch to Previous Desktop"
+      - "Ctrl+Alt+Left,,Switch to Previous Desktop"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - "kwin"
+      - "--key"
+      - "Window to Previous Screen"
+      - "Meta+Shift+Left,Meta+Shift+Left,Window to Previous Screen"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - "kwin"
+      - "--key"
+      - "Expose"
+      - "Ctrl+Alt+Up,Ctrl+F9,Toggle Present Windows (Current desktop)"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - "kmix"
+      - "--key"
+      - "_k_friendly_name"
+      - "Audio Volume"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - "kmix"
+      - "--key"
+      - "decrease_volume"
+      - "Home Page,Volume Down,Decrease Volume"
+  - action: command.run
+    command: kwriteconfig5
+    args:
+      - "--group"
+      - "kmix"
+      - "--key"
+      - "increase_volume"
+      - "Launch (1),Volume Up,Increase Volume"
