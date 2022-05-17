@@ -3,43 +3,43 @@ depends:
 actions:
   - action: command.run
     sudo: true
-    command: systemctl 
+    command: systemctl
     args:
       - enable
       - bluetooth
   - action: command.run
     sudo: true
-    command: systemctl 
+    command: systemctl
     args:
       - enable
       - libvirtd.service
   - action: command.run
     sudo: true
-    command: systemctl 
+    command: systemctl
     args:
       - enable
       - virtlogd.socket
   - action: command.run
     sudo: true
-    command: systemctl 
+    command: systemctl
     args:
       - enable
       - clamav-freshclam.service
   - action: command.run
     sudo: true
-    command: systemctl 
+    command: systemctl
     args:
       - enable
       - clamav-daemon
   - action: command.run
     sudo: true
-    command: systemctl 
+    command: systemctl
     args:
       - start
-      - bluetooth 
+      - bluetooth
   - action: command.run
     sudo: true
-    command: systemctl 
+    command: systemctl
     args:
       - start
-      - xow 
+      - xow

@@ -25,7 +25,6 @@ if [ -d "/sbin" ]; then
 fi
 
 # Include usr sbin
-
 if [ -d "/usr/sbin" ]; then
   export PATH="/usr/sbin:${PATH}"
 fi
@@ -92,3 +91,7 @@ fi
 [ -f "${HOME}/.travis/travis.sh" ] && source ${HOME}/.travis/travis.sh
 
 export PATH=$PATH:$HOME/.pulumi/bin
+
+if [ -d "/usr/sbin" ]; then
+  export PATH="/usr/sbin:${PATH}"
+fi
