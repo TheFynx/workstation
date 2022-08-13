@@ -1,3 +1,4 @@
+#!/bin/bash
 # .bashrc
 
 # If not running interactively, don't do anything
@@ -9,7 +10,7 @@ if [ -f "/etc/bashrc" ]; then
 fi
 
 if [ -n "$DESKTOP_SESSION" ]; then
-  eval $(gnome-keyring-daemon --start)
+  eval "$(gnome-keyring-daemon --start)"
   export SSH_AUTH_SOCK
 fi
 
@@ -41,7 +42,7 @@ fi
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
 for file in ~/.{bash_prompt,aliases,functions,path,extra,exports}; do
-  [[ -r "$file" ]] && [[ -f "$file" ]] && source "$file"
+  [[ -r "${file}" ]] && [[ -f "${file}" ]] && source "${file}"
 done
 
 unset file

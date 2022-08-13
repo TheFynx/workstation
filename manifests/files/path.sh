@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Update path
 if [ -d "/usr/share/bcc/tools" ]; then
   export PATH=/usr/share/bcc/tools:${PATH}

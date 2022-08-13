@@ -11,6 +11,7 @@ actions:
       - adwaita-icon-theme
       - gnome-themes-extra
       - midnight-gtk-theme-git
+      - ulauncher-theme-arc-dark-git
   # System
   - action: package.install
     provider: yay
@@ -18,6 +19,7 @@ actions:
       - jq
       - tree
       - curl
+      - dasel
       - curlie
       - wget
       - unzip
@@ -56,6 +58,7 @@ actions:
       - keybase-gui
       - bitwarden
       - psensor
+      - ulauncher
       - vlc
       - etcher-bin
       - brave-bin
@@ -74,7 +77,7 @@ actions:
     list:
       - lynx
       - alacritty
-      - wezterm
+      - hyper-bin
       - hstr
       - gitstatus-bin
       - zsh
@@ -83,21 +86,17 @@ actions:
       - powerline
       - zsh-history-substring-search
       - zsh-syntax-highlighting
-      - antigen
   # Fonts
   - action: package.install
     provider: yay
     list:
-      - powerline-fonts
-      - ttf-hack
-      - ttf-droid
-      - adobe-source-code-pro-fonts
       - ttf-ancient-fonts
-      - nerd-fonts-source-code-pro
+      - nerd-fonts-git
       - ttf-ms-fonts
       - ttf-weather-icons
       - ttf-material-design-icons
       - ttf-all-the-icons
+      - ttf-roboto
   # Coding
   - action: package.install
     provider: yay
@@ -126,6 +125,7 @@ actions:
       - qemu
       - libvirt
       - edk2-ovmf
+      - lima
   # Work Related
   - action: package.install
     provider: yay

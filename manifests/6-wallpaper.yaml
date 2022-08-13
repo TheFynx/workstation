@@ -1,0 +1,26 @@
+depends:
+  - 1-init
+  - 2-packages
+  - 3-services
+  - 4-node
+  - 4-python
+  - 4-ruby
+  - 5-terminal
+actions:
+  - action: command.run
+    command: mkdir
+    args:
+      - -p {{ user.home_dir }}/Wallpapers
+  - action: file.copy
+    from: wallpapers/mountains_birds_minimal.jpg
+    template: true
+    to: "{{ user.home_dir }}/Wallpapers/mountains_birds_minimal.jpg"
+    chmod: 755
+  - action: file.copy
+    from: wallpapers/mountains_sunset_minimal.jpg
+    to: "{{ user.home_dir }}/Wallpapers/mountains_sunset_minimal.jpg"
+    chmod: 755
+  - action: file.copy
+    from: wallpapers/red_white_square.jpg
+    to: "{{ user.home_dir }}/Wallpapers/red_white_square.jpg"
+    chmod: 755

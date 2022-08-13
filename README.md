@@ -1,4 +1,5 @@
 # Workstation <!-- omit in toc -->
+
 My desktop/laptop setup, now with more Comtrya
 
 - [Prerequisites](#prerequisites)
@@ -6,17 +7,20 @@ My desktop/laptop setup, now with more Comtrya
 - [After Comtrya](#after-comtrya)
   - [Setup Keybase PGP](#setup-keybase-pgp)
 
-# Prerequisites
+## Prerequisites
+
 - [Comtrya](https://github.com/comtrya/comtrya)
   - `curl -fsSL https://get.comtrya.dev | sh`
 
+## Run Setup
 
-# Run Setup
 - From project root `comtrya`
 
-# After Comtrya
-## Setup Keybase PGP
-```
+## After Comtrya
+
+### Setup Keybase PGP
+
+```shell
 # List Keys in Keybase
 keybase pgp export
 keybase pgp export -q $KEY | gpg --import

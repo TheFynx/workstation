@@ -1,15 +1,19 @@
 actions:
 ## SSH Keys
   - action: command.run
-    command: ssh-keygen
+    command: mkdir
     args:
-      - -t ed25519
-      - -f /home/levi/.ssh/git
+      - -p {{ user.home_dir }}/.ssh
   - action: command.run
     command: ssh-keygen
     args:
       - -t ed25519
-      - -f /home/levi/.ssh/id
+      - -f {{ user.home_dir }}.ssh/git
+  - action: command.run
+    command: ssh-keygen
+    args:
+      - -t ed25519
+      - -f {{ user.home_dir }}/.ssh/id
   ## System Upgrade
   - action: command.run
     command: yay

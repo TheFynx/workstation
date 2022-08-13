@@ -1,5 +1,7 @@
+#!/usr/bin/env bash
+
 # Make vim the default editor
-export EDITOR=$(which nvim)
+export EDITOR="$(which nvim)"
 export TERM="xterm-256color"
 
 if [[ "${SHELL}" =~ "bash" ]]; then

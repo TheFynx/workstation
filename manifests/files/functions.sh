@@ -1,10 +1,12 @@
+#!/usr/bin/env bash
+
 # Cleanup Docker Containers
 if [ -n "$(command -v docker)" ]; then
   ## Clean All Non-In Use Docker Items
   dcleanall() {
-    docker rm $(docker ps -aq 2>/dev/null) 2>/dev/null
-    docker rm -v $(docker ps --filter status=exited -q 2>/dev/null) 2>/dev/null
-    docker rmi $(docker images --filter dangling=true -q 2>/dev/null) 2>/dev/null
+    docker rm "$(docker ps -aq 2>/dev/null)" 2>/dev/null
+    docker rm -v "$(docker ps --filter status=exited -q 2>/dev/null)" 2>/dev/null
+    docker rmi "$(docker images --filter dangling=true -q 2>/dev/null)" 2>/dev/null
   }
 fi
 
@@ -15,10 +17,10 @@ fs() {
   else
     local arg=-sh
   fi
-  if [[ -n "$@" ]]; then
+  if [[ -n "$*" ]]; then
     du $arg -- "$@"
   else
-    du $arg .[^.]* *
+    du $arg .[^.]* ./*
   fi
 }
 
@@ -38,13 +40,13 @@ tre() {
 # Get colors in manual pages
 man() {
   env \
-    LESS_TERMCAP_mb=$(printf "\e[1;31m") \
-    LESS_TERMCAP_md=$(printf "\e[1;31m") \
-    LESS_TERMCAP_me=$(printf "\e[0m") \
-    LESS_TERMCAP_se=$(printf "\e[0m") \
-    LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
-    LESS_TERMCAP_ue=$(printf "\e[0m") \
-    LESS_TERMCAP_us=$(printf "\e[1;32m") \
+    LESS_TERMCAP_mb="$(printf "\e[1;31m")" \
+    LESS_TERMCAP_md="$(printf "\e[1;31m")" \
+    LESS_TERMCAP_me="$(printf "\e[0m")" \
+    LESS_TERMCAP_se="$(printf "\e[0m")" \
+    LESS_TERMCAP_so="$(printf "\e[1;44;33m")" \
+    LESS_TERMCAP_ue="$(printf "\e[0m")" \
+    LESS_TERMCAP_us="$(printf "\e[1;32m")" \
     man "$@"
 }
 
