@@ -12,15 +12,6 @@ actions:
     args:
       - "-p"
       - {{ user.home_dir }}/Wallpapers
-  - action: file.copy
-    from: wallpapers/mountains_birds_minimal.jpg
-    to: {{ user.home_dir }}/Wallpapers/mountains_birds_minimal.jpg
-    chmod: 644
-  - action: file.copy
-    from: wallpapers/mountains_sunset_minimal.jpg
-    to: {{ user.home_dir }}/Wallpapers/mountains_sunset_minimal.jpg
-    chmod: 644
-  - action: file.copy
-    from: wallpapers/red_white_square.jpg
-    to: {{ user.home_dir }}/Wallpapers/red_white_square.jpg
-    chmod: 644
+  - action: directory.copy
+    from: wallpapers
+    to: {{ user.home_dir }}/Wallpapers
