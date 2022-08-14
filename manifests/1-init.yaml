@@ -10,16 +10,16 @@ actions:
     args:
       - "-t"
       - ed25519
-      - "-f"
       - "-N ''"
-      - {{ user.home_dir }}.ssh/git
+      - "-f"
+      - {{ user.home_dir }}/.ssh/git
   - action: command.run
     command: ssh-keygen
     args:
       - "-t"
       - ed25519
-      - "-f"
       - "-N ''"
+      - "-f"
       - {{ user.home_dir }}/.ssh/id
   ## System Upgrade
   - action: command.run
