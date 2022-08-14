@@ -11,6 +11,7 @@ actions:
       - "-t"
       - ed25519
       - "-f"
+      - "-N ''"
       - {{ user.home_dir }}.ssh/git
   - action: command.run
     command: ssh-keygen
@@ -18,6 +19,7 @@ actions:
       - "-t"
       - ed25519
       - "-f"
+      - "-N ''"
       - {{ user.home_dir }}/.ssh/id
   ## System Upgrade
   - action: command.run

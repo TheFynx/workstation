@@ -13,5 +13,5 @@ actions:
       - "-p"
       - {{ user.home_dir }}/Wallpapers
   - action: directory.copy
-    from: wallpapers
-    to: {{ user.home_dir }}/Wallpapers
+    from: Wallpapers/
+    to: {{ user.home_dir }}/
