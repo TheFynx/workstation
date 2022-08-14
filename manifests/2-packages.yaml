@@ -11,7 +11,8 @@ actions:
       - adwaita-icon-theme
       - gnome-themes-extra
       - midnight-gtk-theme-git
-      - ulauncher-theme-arc-dark-git
+      - sweet-gtk-theme
+      - candy-icons-git
   # System
   - action: package.install
     provider: yay
@@ -48,6 +49,7 @@ actions:
       - stacer-bin
       - gtop
       - topgrade
+      - debtap
   # Desktop Environment
   - action: package.install
     provider: yay

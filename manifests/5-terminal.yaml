@@ -1,28 +1,6 @@
 depends:
   - 2-packages
 actions:
-  - action: command.run
-    command: curlie
-    args:
-      - "-fsSL"
-      - https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh
-      - "-o"
-      - /tmp/ohmyzsh.sh
-  - action: command.run
-    command: chmod
-    args:
-      - "+x"
-      - /tmp/ohmyzsh.sh
-  - action: command.run
-    command: /tmp/ohmyzsh.sh
-  - action: command.run
-    command: curlie
-    dir: "{{ user.home_dir }}"
-    args:
-      - "-L"
-      - "git.io/antigen"
-      - "-o"
-      - ".local/antigen.zsh"
   - action: file.copy
     from: alacritty/alacritty.yaml
     template: true
@@ -35,3 +13,7 @@ actions:
     from: alacritty/fonts.yaml
     template: true
     to: "{{ user.home_dir }}/.config/alacritty/fonts.yml"
+  - action: file.copy
+    from: hyper/hyper.js
+    template: true
+    to: "{{ user.home_dir }}/.hyper.js"

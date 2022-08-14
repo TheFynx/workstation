@@ -15,48 +15,48 @@ actions:
     from: xfce/thunar.xml
     template: true
     to: "{{ user.home_dir }}/.config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml"
-    chmod: 755
+    chmod: 644
   - action: file.copy
     from: xfce/keyboards.xml
     to: "{{ user.home_dir }}/.config/xfce4/xfconf/xfce-perchannel-xml/keyboards.xml"
-    chmod: 755
+    chmod: 644
   - action: file.copy
     from: xfce/xfce4-desktop.xml
     to: "{{ user.home_dir }}/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml"
-    chmod: 755
+    chmod: 644
   - action: file.copy
     from: xfce/xfce4-keyboard-shortcuts.xml
     to: "{{ user.home_dir }}/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml"
-    chmod: 755
+    chmod: 644
   - action: file.copy
     from: xfce/xfce4-notifyd.xml
     to: "{{ user.home_dir }}/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml"
-    chmod: 755
+    chmod: 644
   - action: file.copy
     from: xfce/xfce4-power-manager.xml
     to: "{{ user.home_dir }}/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml"
-    chmod: 755
+    chmod: 644
   - action: file.copy
     from: xfce/xfce4-screensaver.xml
     to: "{{ user.home_dir }}/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-screensaver.xml"
-    chmod: 755
+    chmod: 644
   - action: file.copy
     from: xfce/xfce4-session.xml
     to: "{{ user.home_dir }}/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml"
-    chmod: 755
+    chmod: 644
   - action: file.copy
     from: xfce/xfce4-settings-editor.xml
     to: "{{ user.home_dir }}/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-editor.xml"
-    chmod: 755
+    chmod: 644
   - action: file.copy
     from: xfce/xfce4-settings-manager.xml
     to: "{{ user.home_dir }}/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-manager.xml"
-    chmod: 755
+    chmod: 644
   - action: file.copy
     from: xfce/xfwm4.xml
     to: "{{ user.home_dir }}/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml"
-    chmod: 755
+    chmod: 644
   - action: file.copy
     from: xfce/xsettings.xml
     to: "{{ user.home_dir }}/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml"
-    chmod: 755
+    chmod: 644
