@@ -1,0 +1,16 @@
+depends:
+  - 2-packages
+actions:
+  - action: command.run
+    command: rm
+    args:
+      - -rf
+      - {{ user.home_dir }}/.config/nvim/
+  - action: command.run
+    command: nvim
+    args:
+      - +PackerSync
+  - action: package.install
+    provider: yay
+    list:
+      - neovide

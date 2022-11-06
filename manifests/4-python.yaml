@@ -1,5 +1,5 @@
 depends:
-- 2-packages
+  - 2-packages
 actions:
   - action: command.run
     command: pyenv

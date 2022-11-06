@@ -106,6 +106,7 @@ module.exports = {
     // bellSoundURL: '/path/to/sound/file',
     // if `true` (without backticks and without quotes), selected text will automatically be copied to the clipboard
     copyOnSelect: true,
+    scrollback: 10000,
     // if `true` (without backticks and without quotes), hyper will be set as the default protocol client for SSH
     defaultSSHApp: true,
     // if `true` (without backticks and without quotes), on right click selected text will be copied or pasted if no
@@ -114,7 +115,7 @@ module.exports = {
     // choose either `'vertical'`, if you want the column mode when Option key is hold during selection (Default)
     // or `'force'`, if you want to force selection regardless of whether the terminal is in mouse events mode
     // (inside tmux or vim with mouse mode enabled for example).
-    macOptionSelectionMode: "vertical",
+    //macOptionSelectionMode: "vertical",
     // Whether to use the WebGL renderer. Set it to false to use canvas-based
     // rendering (slower, but supports transparent backgrounds)
     webGLRenderer: true,
@@ -137,25 +138,62 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [
-    "hyper-visual",
-    "hyper-manager",
-    "hyperlinks",
-    "hyperline",
-    "hyper-savetext",
-    "hyper-search",
-    "hyperterm-safepaste",
-  ],
+  // plugins: ["hyper-visual", "hyperterm-safepaste"],
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here6
   // to load it and avoid it being `npm install`ed
-  localPlugins: ["fig-hyper-integration"],
   keymaps: {
+    "window:devtools": "ctrl+shift+i",
+    "window:reload": "ctrl+shift+r",
+    "window:reloadFull": "ctrl+shift+f5",
+    "window:preferences": "ctrl+,",
+    "window:hamburgerMenu": "alt",
+    "zoom:reset": "ctrl+0",
+    "zoom:in": "ctrl+=",
+    "zoom:out": "ctrl+-",
+    "window:new": "ctrl+shift+n",
+    "window:minimize": "ctrl+shift+m",
+    "window:zoom": "ctrl+shift+alt+m",
+    "window:toggleFullScreen": "f11",
+    "window:close": "ctrl+shift+q",
+    "tab:new": "ctrl+shift+t",
+    "tab:next": [
+      "ctrl+shift+]",
+      "ctrl+shift+right",
+      "ctrl+alt+right",
+      "ctrl+tab",
+    ],
+    "tab:prev": [
+      "ctrl+shift+[",
+      "ctrl+shift+left",
+      "ctrl+alt+left",
+      "ctrl+shift+tab",
+    ],
+    "tab:jump:prefix": "ctrl",
+    "pane:next": "ctrl+pageup",
+    "pane:prev": "ctrl+pagedown",
+    "pane:splitRight": "ctrl+shift+d",
+    "pane:splitDown": "ctrl+shift+e",
+    "pane:close": "ctrl+shift+w",
+    "editor:undo": "ctrl+shift+z",
+    "editor:redo": "ctrl+shift+y",
+    "editor:cut": "ctrl+shift+x",
     "editor:copy": "ctrl+shift+c",
     "editor:paste": "ctrl+shift+v",
+    "editor:selectAll": "ctrl+shift+a",
+    "editor:search": "ctrl+shift+f",
+    "editor:search-close": "esc",
+    "editor:movePreviousWord": "ctrl+left",
+    "editor:moveNextWord": "ctrl+right",
     "editor:moveBeginningLine": "home",
     "editor:moveEndLine": "end",
+    "editor:deletePreviousWord": "ctrl+backspace",
+    "editor:deleteNextWord": "ctrl+del",
+    "editor:deleteBeginningLine": "ctrl+home",
+    "editor:deleteEndLine": "ctrl+end",
+    "editor:clearBuffer": "ctrl+shift+k",
     "editor:break": "ctrl+c",
+    "plugins:update": "ctrl+shift+u",
   },
 };
 //# sourceMappingURL=config-default.js.map
