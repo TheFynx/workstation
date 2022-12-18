@@ -21,7 +21,7 @@ actions:
       - jq
       - tree
       - curl
-      - dasel
+      - dasel-bin
       - curlie
       - wget
       - unzip
@@ -49,8 +49,11 @@ actions:
       - dell-e514dw
       - stacer-bin
       - gtop
+      - bottom
       - topgrade
       - debtap
+      - openssl-1.1
+      - openssl
   # Desktop Environment
   - action: package.install
     provider: yay
@@ -135,7 +138,7 @@ actions:
   - action: package.install
     provider: yay
     list:
-      - aws-cli-v2-bin
+      - aws-cli-v2
       - pulumi
       - terraform
       - packer

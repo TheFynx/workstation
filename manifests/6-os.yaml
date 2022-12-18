@@ -7,56 +7,85 @@ depends:
   - 4-ruby
   - 5-terminal
 actions:
+  #xfce4
   - action: command.run
     command: mkdir
+    where: variables.desktopEnvironment == "xfce"
     args:
       - -p {{ user.home_dir }}/.config/xfce4/xfconf/xfce-perchannel-xml
   - action: file.copy
+    where: variables.desktopEnvironment == "xfce"
     from: xfce/thunar.xml
     template: true
     to: "{{ user.home_dir }}/.config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml"
     chmod: 644
   - action: file.copy
+    where: variables.desktopEnvironment == "xfce"
     from: xfce/keyboards.xml
     to: "{{ user.home_dir }}/.config/xfce4/xfconf/xfce-perchannel-xml/keyboards.xml"
     chmod: 644
   - action: file.copy
+    where: variables.desktopEnvironment == "xfce"
     from: xfce/xfce4-desktop.xml
     to: "{{ user.home_dir }}/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml"
     chmod: 644
   - action: file.copy
+    where: variables.desktopEnvironment == "xfce"
     from: xfce/xfce4-keyboard-shortcuts.xml
     to: "{{ user.home_dir }}/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml"
     chmod: 644
   - action: file.copy
+    where: variables.desktopEnvironment == "xfce"
     from: xfce/xfce4-notifyd.xml
     to: "{{ user.home_dir }}/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml"
     chmod: 644
   - action: file.copy
+    where: variables.desktopEnvironment == "xfce"
     from: xfce/xfce4-power-manager.xml
     to: "{{ user.home_dir }}/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml"
     chmod: 644
   - action: file.copy
+    where: variables.desktopEnvironment == "xfce"
     from: xfce/xfce4-screensaver.xml
     to: "{{ user.home_dir }}/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-screensaver.xml"
     chmod: 644
   - action: file.copy
+    where: variables.desktopEnvironment == "xfce"
     from: xfce/xfce4-session.xml
     to: "{{ user.home_dir }}/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml"
     chmod: 644
   - action: file.copy
+    where: variables.desktopEnvironment == "xfce"
     from: xfce/xfce4-settings-editor.xml
     to: "{{ user.home_dir }}/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-editor.xml"
     chmod: 644
   - action: file.copy
+    where: variables.desktopEnvironment == "xfce"
     from: xfce/xfce4-settings-manager.xml
     to: "{{ user.home_dir }}/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-manager.xml"
     chmod: 644
   - action: file.copy
+    where: variables.desktopEnvironment == "xfce"
     from: xfce/xfwm4.xml
     to: "{{ user.home_dir }}/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml"
     chmod: 644
   - action: file.copy
+    where: variables.desktopEnvironment == "xfce"
     from: xfce/xsettings.xml
     to: "{{ user.home_dir }}/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml"
     chmod: 644
+
+  # Cinnamon
+  - action: file.copy
+    where: variables.desktopEnvironment == "cinnamon"
+    from: cinnamon/dconf
+    template: true
+    to: "{{ user.home_dir }}/dconf"
+    chmod: 644
+  - action: command.run
+    command: dconf
+    where: variables.desktopEnvironment == "cinnamon"
+    args:
+      - load
+      - "/"
+      - <{{ user.home_dir }}/dconf

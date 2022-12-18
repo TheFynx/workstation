@@ -13,3 +13,4 @@ variables:
   nodeVersion: "16.14.2"
   userFullName: "Levi Smith"
   userEmail: "levi@fynx.me"
+  desktopEnvironment: "cinnamon"

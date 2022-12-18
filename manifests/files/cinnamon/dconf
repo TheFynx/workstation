@@ -1,0 +1,503 @@
+[apps/psensor]
+graph-alpha-channel-enabled=false
+graph-background-alpha=1.0
+graph-background-color='#e8f4e8f4a8f5'
+graph-foreground-color='#000000000000'
+graph-monitoring-duration=20
+graph-update-interval=2
+interface-hide-on-startup=false
+interface-window-divider-pos=881
+interface-window-h=900
+interface-window-restore-enabled=true
+interface-window-w=1681
+interface-window-x=615
+interface-window-y=284
+sensor-update-interval=2
+slog-enabled=false
+slog-interval=300
+
+[apps/seahorse/listing]
+keyrings-selected=['secret-service:///org/freedesktop/secrets/collection/login']
+
+[apps/seahorse/windows/key-manager]
+height=476
+width=600
+
+[io/github/celluloid-player/celluloid]
+settings-migrated=true
+
+[io/github/celluloid-player/celluloid/window-state]
+height=480
+loop-playlist=false
+maximized=false
+playlist-width=250
+show-playlist=false
+volume=1.0
+width=640
+
+[org/cinnamon]
+active-display-scale=1.5
+alttab-switcher-delay=100
+alttab-switcher-style='icons'
+applet-cache-updated=1617330063
+command-history=['gwe', 'zart', 'flameshot', 'flameshot gui', 'reboot', 'JACK_NO_AUDIO_RESERVATION=1 sonic-pi', 'JACK_NO_AUDIO_RESERVATION=1 sonic-pi', 'export JACK_NO_AUDIO_RESER
+VATION=1 sonic-pi', 'export JACK_NO_AUDIO_RESERVATION=1; sonic-pi', 'sonic-pi', 'r']
+desklet-snap-interval=25
+desktop-effects-close-effect='traditional'
+desktop-effects-close-time=120
+desktop-effects-close-transition='easeOutQuad'
+desktop-effects-map-effect='traditional'
+desktop-effects-map-time=100
+desktop-effects-map-transition='easeOutQuad'
+desktop-effects-maximize-effect='none'
+desktop-effects-maximize-time=100
+desktop-effects-maximize-transition='easeInExpo'
+desktop-effects-minimize-effect='traditional'
+desktop-effects-minimize-time=160
+desktop-effects-minimize-transition='easeInQuad'
+desktop-effects-style='cinnamon'
+desktop-effects-tile-effect='none'
+desktop-effects-tile-time=100
+desktop-effects-tile-transition='easeInQuad'
+desktop-effects-unmaximize-effect='none'
+desktop-effects-unmaximize-time=100
+desktop-effects-unmaximize-transition='easeNone'
+device-aliases=['/org/freedesktop/UPower/devices/mouse_hidpp_battery_0:= MX Ergo Multi-Device Trackball']
+enabled-applets=['panel1:right:3:systray@cinnamon.org:0', 'panel1:left:0:menu@cinnamon.org:1', 'panel1:left:2:grouped-window-list@cinnamon.org:3', 'panel1:right:4:keyboard@cinnamo
+n.org:4', 'panel1:right:5:notifications@cinnamon.org:5', 'panel1:right:6:removable-drives@cinnamon.org:6', 'panel1:right:8:bluetooth@cinnamon.org:7', 'panel1:right:9:network@cinna
+mon.org:8', 'panel1:right:10:sound@cinnamon.org:9', 'panel1:right:12:calendar@cinnamon.org:11', 'panel1:right:1:power@cinnamon.org:13', 'panel1:right:0:weather@mockturtl:14']
+enabled-desklets=@as []
+extension-cache-updated=1594146592
+hotcorner-layout=['expo:false:0', 'scale:false:0', 'scale:false:0', 'desktop:false:0']
+next-applet-id=15
+panel-edit-mode=false
+panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 28, "center": 28, "right": 16}]'
+panels-enabled=['1:0:top']
+panels-height=['1:38']
+prevent-focus-stealing=true
+show-tile-hud=true
+startup-animation=false
+window-effect-speed=1
+workspace-osd-duration=400
+workspace-osd-visible=true
+workspace-osd-x=50
+workspace-osd-y=50
+
+[org/cinnamon/cinnamon-session]
+quit-delay-toggle=false
+quit-time-delay=60
+
+[org/cinnamon/desktop/a11y/applications]
+screen-keyboard-enabled=false
+screen-reader-enabled=false
+
+[org/cinnamon/desktop/a11y/keyboard]
+bouncekeys-beep-reject=true
+bouncekeys-delay=300
+bouncekeys-enable=false
+disable-timeout=120
+enable=false
+feature-state-change-beep=false
+mousekeys-accel-time=1200
+mousekeys-enable=false
+mousekeys-init-delay=160
+mousekeys-max-speed=750
+slowkeys-beep-accept=true
+slowkeys-beep-press=true
+slowkeys-beep-reject=false
+slowkeys-delay=300
+slowkeys-enable=false
+stickykeys-enable=false
+stickykeys-modifier-beep=true
+stickykeys-two-key-off=true
+timeout-enable=false
+
+[org/cinnamon/desktop/a11y/mouse]
+dwell-threshold=10
+dwell-time=1.2
+secondary-click-time=1.2
+
+[org/cinnamon/desktop/applications/calculator]
+exec='gnome-calculator'
+
+[org/cinnamon/desktop/applications/terminal]
+exec='alacritty'
+exec-arg='--'
+
+[org/cinnamon/desktop/background]
+picture-options='centered'
+picture-uri='file:///home/levi/Wallpapers/wallpaperflare.com_wallpaper (2).jpg'
+primary-color='#000000000000'
+secondary-color='#000000000000'
+
+[org/cinnamon/desktop/background/slideshow]
+delay=15
+image-source='directory:///home/levi/Wallpapers'
+
+[org/cinnamon/desktop/interface]
+clock-show-date=true
+cursor-blink-time=1200
+cursor-size=24
+cursor-theme='Sweet-cursors'
+font-name='Noto Sans 12'
+gtk-overlay-scrollbars=false
+gtk-theme='Sweet'
+icon-theme='candy-icons'
+scaling-factor=uint32 1
+text-scaling-factor=1.0
+toolkit-accessibility=false
+
+[org/cinnamon/desktop/keybindings/media-keys]
+calculator=['<Super>c']
+home=['<Super>e']
+next=['<Super>F7', 'AudioPlay']
+pause=@as []
+play=['AudioNext']
+previous=['<Super>F5', 'AudioPrev']
+screenshot=@as []
+stop=@as []
+terminal=['<Super>t']
+volume-down=['<Super>F2', 'HomePage']
+volume-mute=['<Super>F1', 'Explorer']
+volume-up=['<Super>F3', 'Calculator']
+
+[org/cinnamon/desktop/keybindings/wm]
+maximize=['<Super>KP_5']
+move-to-corner-ne=['<Super>KP_9']
+move-to-corner-nw=['<Super>KP_7']
+move-to-corner-se=['<Super>KP_3']
+move-to-corner-sw=['<Super>KP_1']
+move-to-side-n=@as []
+move-to-workspace-1=['<Primary><Shift><Alt>KP_End']
+move-to-workspace-2=['<Primary><Shift><Alt>KP_Down']
+move-to-workspace-3=['<Primary><Shift><Alt>KP_Next']
+move-to-workspace-4=['<Primary><Shift><Alt>KP_Left']
+move-to-workspace-5=['<Primary><Shift><Alt>KP_Begin']
+move-to-workspace-6=['<Primary><Shift><Alt>KP_Right']
+move-to-workspace-down=@as []
+move-to-workspace-up=@as []
+push-tile-down=['<Super>KP_2']
+push-tile-left=['<Super>KP_4']
+push-tile-right=['<Super>KP_6']
+push-tile-up=['<Super>KP_8']
+switch-to-workspace-1=['<Primary><Alt>KP_1']
+switch-to-workspace-2=['<Primary><Alt>KP_2']
+switch-to-workspace-3=['<Primary><Alt>KP_3']
+switch-to-workspace-4=['<Primary><Alt>KP_4']
+switch-to-workspace-5=['<Primary><Alt>KP_5']
+switch-to-workspace-6=['<Primary><Alt>KP_6']
+unmaximize=['<Alt>F5', '<Super>KP_0']
+
+[org/cinnamon/desktop/media-handling]
+autorun-never=false
+autorun-x-content-ignore=['x-content/bootable-media', 'x-content/blank-dvd']
+autorun-x-content-open-folder=@as []
+autorun-x-content-start-app=['x-content/unix-software', 'x-content/bootable-media', 'x-content/blank-dvd']
+
+[org/cinnamon/desktop/notifications]
+remove-old=true
+
+[org/cinnamon/desktop/peripherals/keyboard]
+delay=uint32 500
+numlock-state=true
+repeat-interval=uint32 30
+
+[org/cinnamon/desktop/peripherals/mouse]
+double-click=472
+drag-threshold=8
+speed=1.0
+
+[org/cinnamon/desktop/peripherals/touchpad]
+edge-scrolling-enabled=false
+natural-scroll=false
+two-finger-scrolling-enabled=true
+
+[org/cinnamon/desktop/screensaver]
+lock-delay=uint32 30
+
+[org/cinnamon/desktop/session]
+idle-delay=uint32 2700
+
+[org/cinnamon/desktop/sound]
+event-sounds=false
+maximum-volume=150
+volume-sound-enabled=false
+
+[org/cinnamon/desktop/wm/preferences]
+focus-mode='click'
+min-window-opacity=30
+num-workspaces=4
+theme='Adapta-Nokto'
+titlebar-font='Noto Sans 12'
+workspace-names=@as []
+
+[org/cinnamon/launcher]
+check-frequency=300
+memory-limit=4096
+
+[org/cinnamon/muffin]
+desktop-effects=false
+resize-threshold=24
+sync-method='fallback'
+sync-to-vblank=true
+tile-hud-threshold=25
+workspace-cycle=true
+workspaces-only-on-primary=true
+
+[org/cinnamon/settings-daemon/peripherals/keyboard]
+numlock-state='on'
+
+[org/cinnamon/settings-daemon/peripherals/touchscreen]
+orientation-lock=false
+
+[org/cinnamon/settings-daemon/plugins/power]
+sleep-display-ac=3600
+
+[org/cinnamon/sounds]
+login-enabled=false
+logout-enabled=false
+plug-enabled=false
+switch-enabled=false
+tile-enabled=false
+unplug-enabled=false
+
+[org/cinnamon/theme]
+name='Sweet'
+symbolic-relative-size=0.67000000000000004
+theme-cache-updated=1617323978
+
+[org/fedoraproject/FirewallConfig]
+show-active-bindings=true
+show-ipsets=true
+
+[org/gnome/Disks/benchmark]
+do-write=true
+num-access-samples=1000
+num-samples=100
+sample-size-mib=10
+
+[org/gnome/calculator]
+accuracy=9
+angle-units='degrees'
+base=10
+button-mode='basic'
+number-format='automatic'
+show-thousands=false
+show-zeroes=false
+source-currency=''
+source-units='degree'
+target-currency=''
+target-units='radian'
+window-position=(1185, 539)
+word-size=64
+
+[org/gnome/desktop/a11y/applications]
+screen-keyboard-enabled=false
+screen-reader-enabled=false
+
+[org/gnome/desktop/a11y/mouse]
+dwell-click-enabled=false
+dwell-threshold=10
+dwell-time=1.2
+secondary-click-enabled=false
+secondary-click-time=1.2
+
+[org/gnome/desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+primary-color='#000000000000'
+secondary-color='#000000000000'
+show-desktop-icons=false
+
+[org/gnome/desktop/interface]
+clock-show-date=true
+cursor-size=24
+cursor-theme='breeze-cursor'
+document-font-name='Noto Sans 11'
+enable-animations=true
+font-name='Noto Sans,  11'
+gtk-im-module='gtk-im-context-simple'
+gtk-theme='Materia'
+icon-theme='Moka'
+monospace-font-name='Source Code Pro 10'
+scaling-factor=uint32 0
+toolbar-style='text'
+toolkit-accessibility=false
+
+[org/gnome/desktop/screensaver]
+color-shading-type='solid'
+idle-activation-enabled=false
+picture-options='zoom'
+primary-color='#000000000000'
+secondary-color='#000000000000'
+
+[org/gnome/desktop/wm/preferences]
+action-middle-click-titlebar='lower'
+button-layout='icon:minimize,maximize,close'
+num-workspaces=4
+
+[org/gnome/eog/view]
+background-color='rgb(0,0,0)'
+use-background-color=true
+
+[org/gnome/file-roller/dialogs/extract]
+recreate-folders=true
+skip-newer=false
+
+[org/gnome/file-roller/dialogs/new]
+default-extension='.zip'
+encrypt-header=false
+expand-options=false
+volume-size=0
+
+[org/gnome/file-roller/listing]
+list-mode='as-folder'
+name-column-width=654
+show-path=false
+sort-method='name'
+sort-type='descending'
+
+[org/gnome/file-roller/ui]
+sidebar-width=200
+window-height=480
+window-width=909
+
+[org/gnome/gedit/plugins]
+active-plugins=['filebrowser', 'time', 'docinfo', 'spell', 'modelines']
+
+[org/gnome/gedit/preferences/ui]
+show-tabs-mode='auto'
+
+[org/gnome/gedit/state/window]
+bottom-panel-size=140
+side-panel-active-page='GeditWindowDocumentsPanel'
+side-panel-size=200
+size=(900, 700)
+state=87168
+
+[org/gnome/gnome-screenshot]
+border-effect='none'
+delay=0
+include-border=true
+include-pointer=false
+last-save-directory='file:///home/levi/Downloads'
+
+[org/gnome/nm-applet]
+disable-connected-notifications=true
+
+[org/gnome/nm-applet/eap/a9c6114a-6477-48e8-80f4-e5776b812964]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gtk/settings/color-chooser]
+custom-colors=[(0.29803921568627451, 0.65098039215686276, 0.90196078431372551, 1.0)]
+selected-color=(true, 0.23921568627450981, 0.2196078431372549, 0.27450980392156865, 1.0)
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=206
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+window-position=(305, 479)
+window-size=(1310, 765)
+
+[org/mate/atril/default]
+window-ratio=(1.44625, 1.8600000000000001)
+
+[org/mate/engrampa/general]
+unar-open-zip=false
+
+[org/mate/engrampa/listing]
+list-mode='as-folder'
+name-column-width=493
+show-path=false
+sort-method='name'
+sort-type='ascending'
+
+[org/mate/engrampa/ui]
+sidebar-width=200
+window-height=816
+window-width=1008
+
+[org/nemo/desktop]
+desktop-layout='false::false'
+show-orphaned-desktop-icons=false
+
+[org/nemo/preferences]
+show-full-path-titles=true
+show-hidden-files=true
+show-location-entry=true
+
+[org/nemo/window-state]
+geometry='1919x1534+50+88'
+maximized=false
+sidebar-bookmark-breakpoint=5
+start-with-sidebar=true
+
+[org/virt-manager/virt-manager]
+manager-window-height=550
+manager-window-width=550
+xmleditor-enabled=true
+
+[org/virt-manager/virt-manager/confirm]
+forcepoweroff=true
+unapplied-dev=true
+
+[org/virt-manager/virt-manager/connections]
+autoconnect=['qemu:///system']
+uris=['qemu:///system']
+
+[org/virt-manager/virt-manager/conns/qemu:system]
+window-size=(800, 600)
+
+[org/virt-manager/virt-manager/details]
+show-toolbar=true
+
+[org/virt-manager/virt-manager/new-vm]
+graphics-type='system'
+
+[org/virt-manager/virt-manager/paths]
+media-default='/home/levi/vms/macos'
+
+[org/virt-manager/virt-manager/vmlist-fields]
+disk-usage=false
+network-traffic=false
+
+[org/virt-manager/virt-manager/vms/be499b3ddbf6461aaccb5923311b6c7a]
+autoconnect=1
+scaling=1
+vm-window-size=(1024, 842)
+
+[org/virt-manager/virt-manager/vms/cfd1e72b98074ca69f525233136c214d]
+autoconnect=1
+scaling=1
+vm-window-size=(1912, 2088)
+
+[org/virt-manager/virt-manager/vms/d06d502a904a4b34847ddebf1a3d76c7]
+autoconnect=1
+scaling=1
+vm-window-size=(1024, 842)
+
+[org/x/editor/plugins]
+active-plugins=['filebrowser', 'sort', 'bracketcompletion', 'open-uri-context-menu', 'joinlines', 'time', 'textsize', 'modelines', 'docinfo', 'spell']
+
+[org/x/editor/plugins/filebrowser/on-load]
+root='file:///'
+tree-view=true
+virtual-root='file:///home/levi'
+
+[org/x/editor/preferences/ui]
+statusbar-visible=true
+
+[org/x/editor/state/window]
+bottom-panel-size=140
+side-panel-active-page=827629879
+side-panel-size=200
+size=(1916, 2083)
+state=87168
