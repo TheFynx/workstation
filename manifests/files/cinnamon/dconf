@@ -148,7 +148,6 @@ text-scaling-factor=1.0
 toolkit-accessibility=false
 
 [org/cinnamon/desktop/keybindings/media-keys]
-calculator=['<Super>c']
 home=['<Super>e']
 next=['<Super>F7', 'AudioPlay']
 pause=@as []

@@ -52,9 +52,9 @@ export LESS_TERMCAP_md="${yellow}"
 export TODOTXT_DEFAULT_ACTION=ls
 
 # HiDPI for GTK Apps
-export GDK_SCALE=2
-export GDK_DPI_SCALE=0.5
-export QT_DEVICE_PIXEL_RATIO=2
+# export GDK_SCALE=2
+# export GDK_DPI_SCALE=0.5
+# export QT_DEVICE_PIXEL_RATIO=2
 
 # Set Docker to Allow Untrusted Images
 export DOCKER_CONTENT_TRUST=0
