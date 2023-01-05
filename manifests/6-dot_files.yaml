@@ -5,6 +5,8 @@ depends:
   - 4-node
   - 4-python
   - 4-ruby
+  - 4-rust
+  - 5-terminal
 actions:
   - action: file.copy
     from: aliases.sh

@@ -1,5 +1,6 @@
 depends:
   - 2-packages
+  - 3-services
 actions:
   - action: command.run
     command: rm

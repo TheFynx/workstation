@@ -1,5 +1,11 @@
 depends:
+  - 1-init
   - 2-packages
+  - 3-services
+  - 4-node
+  - 4-python
+  - 4-ruby
+  - 4-rust
 actions:
   - action: file.copy
     from: alacritty/alacritty.yaml
